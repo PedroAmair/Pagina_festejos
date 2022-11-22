@@ -1,5 +1,5 @@
 Options -MultiViews
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(confirmar-cuenta)(.*)/?$ index.php?token=$1 [QSA,NC,L]
+RewriteRule ^(.*)?$ index.php?token=$1 [QSA,NC,L]
 RewriteRule ^ index.php [QSA,L]
