@@ -16,7 +16,7 @@
 
     //Confirmar cuenta
     $router->get("/mensaje", [LoginController::class, "mensaje"]);
-    $router->get("/confirmar-cuenta?token=[A-Za-z0-9-]+", [LoginController::class, "confirmar"]);
+    $router->get("/confirmar-cuenta", [LoginController::class, "confirmar"]);
 
     //Manejo de sesión
     $router->get("/login", [LoginController::class, "login"]);
