@@ -5,8 +5,8 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
-    RewriteRule ^([A-Za-z0-9-]+)$ /confirmar-cuenta?token=$1
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^([A-Za-z0-9-]+)$ /confirmar-cuenta?token=$1
     RewriteRule ^(.*)$ index.php/$2 [QSA,PT,L]
 </IfModule>
