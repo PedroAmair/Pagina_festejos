@@ -10,7 +10,7 @@
 
     $router = new Router;
 
-    //Crear cuenta
+    
     $router->get("/", [LoginController::class, "crear"]);
     $router->post("/", [LoginController::class, "crear"]);
 
