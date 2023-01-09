@@ -1,4 +1,5 @@
 <?php
+    debuguear(__DIR__);
     require_once __DIR__."/../includes/app.php";
 
     use MVC\Router;
