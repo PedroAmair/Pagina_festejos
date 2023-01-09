@@ -1,5 +1,6 @@
 <?php
-    require_once $_SERVER['DOCUMENT_ROOT'].'/../includes/app.php';
+    require_once __DIR__.'/../includes/app.php';
+    debuguear(__DIR__);
 
     use MVC\Router;
     use Controllers\LoginController;
