@@ -70,7 +70,7 @@ class Email {
         $contenido = '<html>';
         $contenido .= "<p><strong>Hola " . $this->nombre .  "</strong> Has solicitado reestablecer tu password, sigue el siguiente enlace para hacerlo.</p>";
         $contenido .= "<p>Presiona aquí: <a href='/festejosmerina-f3b9f9cf6e47.herokuapp.com/recuperar?token=" . $this->token . "'>Reestablecer Password</a>";        
-        $contenido .= "<p>Si tu no solicitaste este cambio, puedes ignorar el mensaje</p>";
+        $contenido .= "<p>Si tu no solicitaste este cambioo, puedes ignorar este mensaje</p>";
         $contenido .= '</html>';
         $mail->Body = $contenido;
 
