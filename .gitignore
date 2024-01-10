@@ -1,0 +1,11 @@
+src/
+vendor/
+festejos_bd.sql
+node_modules/
+gulpfile.js
+package.json
+package-lock.json
+.vscode
+.env
+
+
