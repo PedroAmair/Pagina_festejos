@@ -38,6 +38,9 @@
             if(!$this->telefono) {
                 self::$alertas["error"][] = "Debe ingresar un número de teléfono";
             }
+            if($this->telefono && strlen($this->telefono) != 10) {
+                self::$alertas["error"][] = "El número de teléfono debe tener 10 dígitos";
+            }
             if(!$this->email) {
                 self::$alertas["error"][] = "Debe colocar el correo electrónico";
             }
