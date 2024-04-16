@@ -1,7 +1,8 @@
 <h2 class="nombre-pagina">Crear Cuenta</h2>
-<p class="descripcion-pagina">Llena el siguiente formulario de registro y 
-                              forma parte de la gran familia Merina, el club
-                              ideal para celebrar todos tus momentos especiales.
+<p class="descripcion-pagina">
+    Llena el siguiente formulario de registro y 
+    forma parte de la gran familia Merina, el club
+    ideal para celebrar todos tus momentos especiales.
 </p>
 
 <?php 

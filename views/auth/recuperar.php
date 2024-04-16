@@ -17,7 +17,6 @@
         />
     </div>
     <input type="submit" class="boton" value="Guardar Nuevo Password">
-
 </form>
 
 <div class="opciones">

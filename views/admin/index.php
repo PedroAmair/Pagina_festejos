@@ -54,7 +54,7 @@
                     </form>
                     
                 <?php } ?>
-        <?php }  //Fin del foreach?>
+        <?php } //Fin del foreach?>
     </ul>
 </div>
 

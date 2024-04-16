@@ -5,7 +5,6 @@
 
 <?php
     if(isset($_SESSION["admin"])) { ?>
-        
         <div class="barra-servicios">
             <a class="boton" href="/admin">Ver reservas</a>
             <a class="boton" href="/servicios">Ver servicios</a>
