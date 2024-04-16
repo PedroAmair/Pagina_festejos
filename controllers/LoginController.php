@@ -21,7 +21,7 @@
 
                     if($resultado->num_rows) {
                         $alertas = $usuario::getAlertas();
-                    }else{
+                    } else {
                         $usuario->hashPassword();
                         $usuario->crearToken();
 
@@ -91,11 +91,11 @@
                             if($usuario->admin === "1") {
                                 $_SESSION["admin"] = $usuario->admin;
                                 header("location: /admin");
-                            }else{
+                            } else {
                                 header("location: /reserva");
                             }
                         }
-                    }else{
+                    } else {
                         Usuario::setAlerta("error", "usuario no encontrado");
                     }
                 }

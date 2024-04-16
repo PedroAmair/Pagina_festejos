@@ -1,8 +1,8 @@
 <?php
     namespace Controllers;
 
-use Model\Reserva;
-use MVC\Router;
+    use Model\Reserva;
+    use MVC\Router;
     use Model\Servicio;
     use Model\ReservaServicio;
 

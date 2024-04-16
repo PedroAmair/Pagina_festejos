@@ -19,7 +19,7 @@ class Email {
 
     public function enviarConfirmacion() {
 
-         // create a new object
+         // crer un nuevo objeto
          $mail = new PHPMailer();
          $mail->isSMTP();
          $mail->Host = 'smtp.mailtrap.io';
@@ -32,7 +32,7 @@ class Email {
          $mail->addAddress('cuentas@Merina.com', 'CdFMerina.com');
          $mail->Subject = 'Confirma tu Cuenta';
 
-         // Set HTML
+         // definir HTML
          $mail->isHTML(TRUE);
          $mail->CharSet = 'UTF-8';
 
@@ -50,7 +50,7 @@ class Email {
 
     public function enviarInstrucciones() {
 
-        // create a new object
+        // crear nuevo objeto
         $mail = new PHPMailer();
         $mail->isSMTP();
         $mail->Host = 'smtp.mailtrap.io';
@@ -63,7 +63,7 @@ class Email {
         $mail->addAddress('cuentas@Merina.com', 'CdfMerina.com');
         $mail->Subject = 'Reestablece tu password';
 
-        // Set HTML
+        // definir HTML
         $mail->isHTML(TRUE);
         $mail->CharSet = 'UTF-8';
 
