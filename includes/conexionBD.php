@@ -4,7 +4,7 @@
         $_ENV["MYSQLUSER"],
         $_ENV["MYSQLPASSWORD"] ?? "",
         $_ENV["MYSQLDATABASE"],
-        //$_ENV["MYSQLPORT"]
+        $_ENV["MYSQLPORT"]
     );
 
     $conn->set_charset('utf8');
