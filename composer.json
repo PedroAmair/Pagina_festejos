@@ -21,7 +21,7 @@
         "phpmailer/phpmailer": "^6.6"
     },
 
-    "require-dev": {
-        "heroku/heroku-buildpack-php" : "dev-master"
+    "scripts": {
+        "start": "php -S 0.0.0.0:8080 -t public"
     }
 }
