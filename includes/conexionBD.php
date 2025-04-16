@@ -1,10 +1,16 @@
 <?php
     $conn = new mysqli(
-        $_ENV["MYSQLHOST"],
+        /*$_ENV["MYSQLHOST"],
         $_ENV["MYSQLUSER"],
         $_ENV["MYSQLPASSWORD"] ?? "",
         $_ENV["MYSQLDATABASE"],
-        $_ENV["MYSQLPORT"]
+        $_ENV["MYSQLPORT"]*/
+
+        getenv("MYSQLHOST"),
+        getenv("MYSQLUSER"),
+        getenv("MYSQLPASSWORD"),
+        getenv("MYSQLDATABASE"),
+        (int) getenv("MYSQLPORT")
     );
 
     $conn->set_charset('utf8');
