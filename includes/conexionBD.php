@@ -1,22 +1,25 @@
 <?php
-    $conn = new mysqli(
-        /*$_ENV["MYSQLHOST"],
-        $_ENV["MYSQLUSER"],
-        $_ENV["MYSQLPASSWORD"] ?? "",
-        $_ENV["MYSQLDATABASE"],
-        $_ENV["MYSQLPORT"]*/
 
-        getenv("MYSQLHOST"),
-        getenv("MYSQLUSER"),
-        getenv("MYSQLPASSWORD"),
-        getenv("MYSQLDATABASE"),
-        (int) getenv("MYSQLPORT")
-    );
+$host = getenv("MYSQLHOST");
+$user = getenv("MYSQLUSER");
+$password = getenv("MYSQLPASSWORD");
+$database = getenv("MYSQLDATABASE");
+$port = (int) getenv("MYSQLPORT");
 
-    $conn->set_charset('utf8');
+if (!$host || !$user || !$password || !$database || !$port) {
+    die("Error: Algunas variables de entorno no están definidas correctamente.");
+}
 
-    if($conn->connect_error) {
-        echo $error->$conn->connect_error;
-    }
+$conn = new mysqli($host, $user, $password, $database, $port);
+
+if ($conn->connect_error) {
+    die("Error de conexión: " . $conn->connect_error);
+}
+
+/*$_ENV["MYSQLHOST"],
+$_ENV["MYSQLUSER"],
+$_ENV["MYSQLPASSWORD"] ?? "",
+$_ENV["MYSQLDATABASE"],
+$_ENV["MYSQLPORT"]*/
 
 ?>
